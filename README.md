@@ -22,8 +22,6 @@ A C++ ray tracer capable of visualizing 3D scenes with spheres and triangle mesh
   * **CPU Parallelization:** Multi-core parallel processing for high performance.
   * **Mesh Loading:** Native import support for `.obj` files.
 
-\---
-
 ## Render Benchmarks
 
 All benchmark renders below were executed at **$512 \\times 512$ resolution** with a 60° FOV on an Intel i7 CPU (14 cores):
@@ -36,8 +34,6 @@ All benchmark renders below were executed at **$512 \\times 512$ resolution** wi
 |**Cat Mesh (Direct)**|Single AABB, Phong normal interpolation|**1.5 s**|
 |**Cat Mesh (Indirect)**|64 rays/pixel, max depth 5, BVH accelerated|**3.5 s**|
 |**Cat Mesh (Glass \& Mirror)**|256 rays/pixel, BVH accelerated|**7.5 s**|
-
-\---
 
 ## Technical Details
 
