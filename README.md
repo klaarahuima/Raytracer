@@ -2,8 +2,6 @@
 
 A C++ ray tracer capable of visualizing 3D scenes with spheres and triangle meshes, advanced lighting effects, acceleration structures, and realistic material properties.
 
-\---
-
 ## Features
 
 * **Surface Materials \& Optics**
@@ -56,53 +54,6 @@ Ray-mesh intersection testing on detailed geometry (thousands of polygons) is co
 $$\\eta\_1 \\sin(\\theta\_1) = \\eta\_2 \\sin(\\theta\_2)$$
 * **Phong Shading:** Barycentric coordinates interpolate normals across a triangle face to render smooth curved surfaces on polyhedral meshes:
 $$\\mathbf{N}\_p = w\_A \\mathbf{N}\_A + w\_B \\mathbf{N}\_B + w\_C \\mathbf{N}\_C$$
-
-\---
-
-## Project Structure
-
-```text
-.
-├── src/
-│   ├── main.cpp          # Camera setup and main rendering loop
-│   ├── raytracer.cpp     # Core path tracing, refraction, and lighting routines
-│   ├── bvh.cpp           # BVH tree construction and depth-first traversal
-│   ├── mesh.cpp          # OBJ loader and triangle intersection routines
-│   └── geometry.cpp      # Spheres, planes, and primitive definitions
-├── models/               # .obj mesh assets (e.g., cat.obj)
-├── output/               # Rendered output images
-└── README.md
-```
-
-\---
-
-## Getting Started
-
-### Prerequisites
-
-* **C++ Compiler:** C++17 compliant compiler (`g++`, `clang++`, or MSVC)
-* **Build Tool:** `cmake` (version 3.14+) or `make`
-
-### Building the Project
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/ray-tracer.git
-cd ray-tracer
-
-# Build
-mkdir build \&\& cd build
-cmake ..
-make -j$(nproc)
-```
-
-### Running
-
-```bash
-./raytracer
-```
-
-\---
 
 ## Future Roadmap
 
